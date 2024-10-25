@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Математическая игра</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>Математическая игра</h1>
+    <div id="game">
+      <p>Уровень: <span id="level">Начальный</span></p>
+      <p>Оставшихся вопросов: <span id="questionsLeft">10</span></p>
+      <p>Правильных ответов: <span id="correctCount">0</span></p>
+      <p>Неправильных ответов: <span id="incorrectCount">0</span></p>
+      <p id="question">Нажмите "Начать играть", чтобы получить первый вопрос</p>
+      <p>Ожидаемый ответ: <span id="answerHint">число</span></p>
+      <div id="answerContainer" style="display: none;">
+        <input type="text" id="answer" placeholder="Введите ответ" />
+        <button id="submit">Ответить</button>
+      </div>
+    </div>
+    <button id="start">Начать играть</button>
+    <button id="restart" style="display:none">Перезапустить игру</button>
+    <p id="message"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
